@@ -9,7 +9,7 @@ DB_USER="${DB_USER:-staytus}"
 DB_PASSWORD="${DB_PASSWORD:-staytus}"
 DB_DATABASE="${DB_DATABASE:-staytus}"
 
-cd /opt/staytus/staytus || { echo "staytus directory not found."; exit 1; }
+cd /opt/staytus/staytus || { echo "/opt/staytus/staytus directory not found."; exit 1; }
 
 if [ $AUTO_CONF  ]; then
     if [ ! -f "/opt/staytus/staytus/config/database.yml" ]; then

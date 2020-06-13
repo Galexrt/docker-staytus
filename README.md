@@ -15,8 +15,8 @@ Image available from:
 
 ### Versions
 
-* `latest` image tag points to the latest `stable` branch of Staytus repository.
-* `vmaster` image tag points to the `master` branch of Staytus repository.
+* `latest` image tag points to the latest `master` branch build image (see next point).
+* `vmaster-*` image tags point to the `master` branch of Staytus repository and are build every month.
 
 ### Pulling the image
 
@@ -53,7 +53,7 @@ docker run \
     -e MYSQL_DATABASE=staytus \
     -e MYSQL_USER=staytus \
     -e MYSQL_PASSWORD=staytus \
-    mariadb:10.4.4-bionic
+    mariadb:10.4-focal
 ```
 
 Start the Staytus container with the environment variables pointing to the created `database` container.
